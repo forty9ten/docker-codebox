@@ -8,6 +8,12 @@ IDE in a container.  Using https://github.com/FriendCode/codebox.
 vagrant up
 ```
 
+If you already have a working Docker installation, simply run:
+
+```
+docker run -p 8000:8000 -v /vagrant:/vagrant jeromebaum/codebox /vagrant --open
+```
+
 #### How to run codebox IDE
 
 ```
