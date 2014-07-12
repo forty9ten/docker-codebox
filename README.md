@@ -11,14 +11,14 @@ vagrant up
 If you already have a working Docker installation, simply run:
 
 ```
-docker run -p 8000:8000 -v /vagrant:/vagrant jeromebaum/codebox /vagrant --open
+docker run -p 8000:8000 -v /vagrant:/vagrant jeromebaum/codebox run /vagrant --open
 ```
 
 #### How to run codebox IDE
 
 ```
 vagrant ssh
-docker run -p :8000:8000 -v /vagrant:/vagrant codebox /vagrant --open
+docker run -p :8000:8000 -v /vagrant:/vagrant codebox run /vagrant --open
 ```
 
 On the host machine (host of vagrant) open browser to ```192.168.33.10:8000```.
